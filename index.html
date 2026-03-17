@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abre com carinho 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔒 SENHA -->
+<div class="screen lock" id="lock">
+  <h2>Digite a senha 💌</h2>
+  <input type="password" id="password" placeholder="Senha">
+  <button onclick="checkPassword()">Entrar</button>
+  <p id="error"></p>
+</div>
+
+<!-- 🎀 CAPA -->
+<div class="screen cover" id="cover">
+  <div class="gift">
+    <div class="bow">🎀</div>
+    <div class="foto"></div>
+    <p class="texto">abre com carinho 💌</p>
+  </div>
+</div>
+
+<!-- 📖 LIVRO -->
+<div class="screen book" id="book">
+
+  <div class="page active">
+    <p><b>Mary 🦇</b></p>
+    <p>Eu gosto de falar contigo…</p>
+  </div>
+
+  <div class="page">
+    <p>Você alegra meus dias de um jeito leve.</p>
+  </div>
+
+  <div class="page">
+    <p>Mesmo quando some tipo Batman 😅</p>
+  </div>
+
+  <div class="page">
+    <p>Eu fico feliz quando você volta.</p>
+  </div>
+
+  <div class="page destaque">
+    <p>o resto das páginas estará em branco...</p>
+    <p>pra nós escrevermos nossa história juntos 💌</p>
+  </div>
+
+  <!-- ✍️ páginas editáveis -->
+  <div class="page edit" contenteditable="true"></div>
+  <div class="page edit" contenteditable="true"></div>
+  <div class="page edit" contenteditable="true"></div>
+  <div class="page edit" contenteditable="true"></div>
+  <div class="page edit" contenteditable="true"></div>
+
+  <div class="controls">
+    <button id="back">⬅️</button>
+    <button id="next">➡️</button>
+  </div>
+
+</div>
+
+<!-- 🎵 SOM -->
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9bce70.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
