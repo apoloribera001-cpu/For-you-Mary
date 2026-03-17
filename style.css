@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, Arial;
+  background: #000;
+  color: white;
+}
+
+/* telas */
+.screen {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* senha */
+.lock {
+  display: flex;
+}
+
+/* capa */
+.cover {
+  background: #fff0f5;
+  text-align: center;
+}
+
+.bow {
+  font-size: 80px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.15); }
+}
+
+.foto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-image: url('foto.JPG');
+  background-size: cover;
+  background-position: center;
+  margin: 15px auto;
+  border: 4px solid white;
+  box-shadow: 0 0 20px pink;
+}
+
+.texto {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* livro */
+.book {
+  display: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page {
+  display: none;
+  max-width: 350px;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.6;
+}
+
+.page.active {
+  display: block;
+}
+
+.destaque {
+  color: pink;
+}
+
+.edit {
+  min-height: 180px;
+  outline: none;
+}
+
+/* botões */
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4b6e;
+  color: white;
+  font-size: 16px;
+}
